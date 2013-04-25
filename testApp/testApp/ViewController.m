@@ -18,8 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-   
     
+    NSString *appendResult = [self append:@"25" str2:@"30"];
+    [self displayAlertWithString:appendResult];
 }
 
 - (int)add:(NSInteger)n1 n2:(NSInteger)n2
