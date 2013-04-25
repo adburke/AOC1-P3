@@ -19,8 +19,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    // Step 4
     NSString *appendResult = [self append:@"25" str2:@"30"];
     [self displayAlertWithString:appendResult];
+    
+    // Step 6
+    NSInteger addResult = [self add:12 n2:15];
+    NSNumber *bundleNum = [[NSNumber alloc] initWithInt:addResult];
+    NSString *bundleStr = [NSString stringWithFormat:@"%@", bundleNum];
+    [self displayAlertWithString:bundleStr];
+    
 }
 
 - (int)add:(NSInteger)n1 n2:(NSInteger)n2
@@ -46,7 +54,7 @@
 
 - (void)displayAlertWithString:(NSString*)str
 {
-    UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Alert View" message:(@"The number is %@",str) delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Alert View" message:[NSString stringWithFormat:@"The number is %@",str] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     
     if (alertview != nil)
     {
