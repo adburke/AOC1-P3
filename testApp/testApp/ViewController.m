@@ -36,9 +36,9 @@
     }
 }
 
-- (NSString)append:(NSString*)str1 str2:(NSString*)str2
+- (NSString*)append:(NSString*)str1 str2:(NSString*)str2
 {
-    
+   NSMutableString *mutString = 
 }
 
 - (void)didReceiveMemoryWarning
