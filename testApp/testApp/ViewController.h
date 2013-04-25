@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    
+}
+- (int)add:(NSInteger)n1 n2:(NSInteger)n2;
+- (BOOL)compare:(NSInteger)n1 n2:(NSInteger)n2;
 
 @end
