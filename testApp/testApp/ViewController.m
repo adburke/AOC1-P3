@@ -38,7 +38,9 @@
 
 - (NSString*)append:(NSString*)str1 str2:(NSString*)str2
 {
-   NSMutableString *mutString = 
+    NSMutableString *mutString = [[NSMutableString alloc] init];
+    [mutString appendFormat:@"%@%@", str1, str2];
+    return mutString;
 }
 
 - (void)didReceiveMemoryWarning

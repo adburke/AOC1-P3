@@ -14,5 +14,7 @@
 }
 - (int)add:(NSInteger)n1 n2:(NSInteger)n2;
 - (BOOL)compare:(NSInteger)n1 n2:(NSInteger)n2;
+- (NSString*)append:(NSString*)str1 str2:(NSString*)str2;
+
 
 @end
