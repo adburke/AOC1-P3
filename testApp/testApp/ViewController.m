@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+   
     
 }
 
@@ -41,6 +41,17 @@
     NSMutableString *mutString = [[NSMutableString alloc] init];
     [mutString appendFormat:@"%@%@", str1, str2];
     return mutString;
+}
+
+- (void)displayAlertWithString:(NSString*)str
+{
+    UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Alert View" message:(@"The number is %@",str) delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    
+    if (alertview != nil)
+    {
+        [alertview show];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
